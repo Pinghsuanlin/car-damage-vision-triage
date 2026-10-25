@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+.env
+
+# Data stays local (download from Humans in the Loop); the split file is committed
+data/raw/
+data/processed/
+data/groups.json
+docs/
+# Model weights stay local; metrics, per-class tables and comparison.md are committed
+results/**/model.pt
+

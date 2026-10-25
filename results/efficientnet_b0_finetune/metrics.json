@@ -1,0 +1,28 @@
+{
+  "run": "efficientnet_b0_finetune",
+  "n_test": 123,
+  "macro_ap": 0.5308350736703242,
+  "chance_macro_ap": 0.4237804878048781,
+  "macro_ap_ci": [
+    0.47930067697434736,
+    0.5944745378260519
+  ],
+  "micro_f1": 0.7062200956937799,
+  "micro_f1_ci": [
+    0.6731693164127,
+    0.7352701532032919
+  ],
+  "exact_match": 0.04065040650406504,
+  "ece": 0.12739711385899394,
+  "triage_max_error": 0.1,
+  "triage_coverage": 0.0,
+  "triage_error": 0.0,
+  "macro_ap_blur": 0.4680468550746414,
+  "micro_f1_blur": 0.5678537054860443,
+  "macro_ap_jpeg": 0.4588574156974018,
+  "micro_f1_jpeg": 0.6882745471877979,
+  "macro_ap_low_light": 0.4984939614898647,
+  "micro_f1_low_light": 0.6823104693140795,
+  "macro_ap_low_res": 0.45353579039722414,
+  "micro_f1_low_res": 0.5251727541954591
+}

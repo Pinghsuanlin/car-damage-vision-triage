@@ -1,0 +1,96 @@
+{
+  "config": {
+    "model": "efficientnet_b0",
+    "mode": "finetune",
+    "epochs": 15,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "image_size": 224,
+    "patience": 4,
+    "seed": 7,
+    "pretrained": true,
+    "num_workers": 0
+  },
+  "device": "mps",
+  "best_epoch": 15,
+  "best_val_macro_ap": 0.5521362607571997,
+  "minutes": 2.0,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.4540703531721948,
+      "val_macro_ap": 0.45482465096277513
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2293123594472106,
+      "val_macro_ap": 0.47108130293116585
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.917637009016225,
+      "val_macro_ap": 0.4870875629892485
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.717295441828983,
+      "val_macro_ap": 0.5100073895070696
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.620230775483897,
+      "val_macro_ap": 0.5226568656942836
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5198174933312645,
+      "val_macro_ap": 0.5319366407089787
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.4631525412411757,
+      "val_macro_ap": 0.5417420362487915
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.40126565308638024,
+      "val_macro_ap": 0.5467828456562056
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.3593065537197489,
+      "val_macro_ap": 0.5482551114610449
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.35747824756192487,
+      "val_macro_ap": 0.547216671878874
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.32318015501532754,
+      "val_macro_ap": 0.5512591686318048
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.3195779877649227,
+      "val_macro_ap": 0.5520906165996865
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.3125168756699898,
+      "val_macro_ap": 0.5443768450125245
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.29464184818133504,
+      "val_macro_ap": 0.5437140119325196
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.29799892700893776,
+      "val_macro_ap": 0.5521362607571997
+    }
+  ]
+}

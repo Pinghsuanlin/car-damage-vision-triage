@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "car-damage-triage"
+version = "0.1.0"
+description = "Fine-tune pretrained image models to classify car damage, compare with zero-shot CLIP, and decide which photos can skip human review."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Sherie Lin" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "pillow>=10.0",
+    "torch>=2.3",
+    "torchvision>=0.18",
+    "timm>=1.0",
+    "open_clip_torch>=2.24",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.35"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+damage-triage = "damage_triage.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/damage_triage"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 132
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["UP007", "UP045", "SIM108", "E402"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["damage_triage"]
